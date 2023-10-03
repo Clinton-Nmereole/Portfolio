@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "Windstone"; 
+    src: url("/fonts/windstone/Windstone-Regular.otf")
+    format("opentype");
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Rotten";
+    src: url("/fonts/rotten/rotten.ttf")
+    format("truetype");
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Colton";
+    src: url("/fonts/colton/Colton.otf")
+    format("opentype");
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Coreta";
+    src: url("/fonts/coreta/coreta.ttf")
+    format("truetype");
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Essential-Economy";
+    src: url("/fonts/essential-economy/Essential-Economy.ttf")
+    format("truetype");
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Carlosea";
+    src: url("./fonts/carlosea/carlosea.otf")
+    format("opentype");
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Neue";
+    src: url("./fonts/neue-machina/Neue-Machina-Regular.ttf")
+    format("truetype");
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+  }
+}
