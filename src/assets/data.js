@@ -53,6 +53,10 @@ export const technologies = [
   {
     text: "Docker",
     logo: "bx bxl-docker"
+  },
+  {
+    text: "Git",
+    logo: "bx bxl-git"
   }
 
 ]
