@@ -11,7 +11,7 @@ let i = 0;
         <div class="flex py-5 justify-between w-full hover:opacity-90 hover:translate-x-4 duration-300 rounded-3xl">
           <h2 class="lg:text-9xl text-3xl py-5 sm:ml-32 ml-2 border-t-white border-solid border-t-4 font-Rotten">{project.title}</h2>
           <Image src={project.img} width={400} height={400} alt={project.title} id={`${i}`} class="hidden border-2 border-white rounded-full"/>
-          <h2 class="md:text-2xl text-xs py-5 mr-12 border-t-white border-solid border-t-4 font-Rotten ">Explanation</h2>
+          <h2 class="md:text-2xl text-xs py-5 mr-12 border-t-white border-solid border-t-4 font-Rotten ">{project.explanation}</h2>
         </div>
         <span class="hidden">{i = i + 1}</span>
       </div>

@@ -64,18 +64,22 @@ export const technologies = [
 export const projects = [
   {
     img: "/images/website1.jpg",
-    title: "Website 1",
+    title: "GoBank",
+    explanation:"A JSON API for a personal bank system"
   },
   {
     img: "/images/website2.jpg",
     title: "Website 2",
+    explanation:"Explanation"
   },
   {
     img: "/images/website3.jpg",
     title: "Website 3",
+    explanation:"Explanation"
   },
   {
     img: "/images/website4.jpg",
     title: "Website 4",
+    explanation:"Explanation"
   },
 ]
