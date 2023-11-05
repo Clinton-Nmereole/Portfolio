@@ -2,14 +2,26 @@
 const navitems = ["Mission", "Technologies", "Projects", "Contact"];
 ---
 
-<nav class="flex md:justify-between p-2 w-full opacity-90 z-[100] fixed bg-transparent">
-  <a href="/#Home"><h1 class="xl:text-8xl lg:text-7xl md:text-5xl xs:text-4xl font-Essential text-white">NMEREOLE</h1></a>
+<nav
+    class="flex md:justify-between p-2 w-full opacity-80 z-[100] fixed bg-transparent shadow-black"
+>
+    <a href="/#Home"
+        ><h1
+            class="xl:text-9xl font-bold lg:text-7xl md:text-5xl xs:text-4xl font-Bebas text-white"
+        >
+            NMEREOLE
+        </h1></a
+    >
 
-  <ul class="invisible xl:visible lg:visible md:visible xl:text-xl lg:text-xl md:text-lg xs:text-md mr-6">
-    {navitems.map((item) => (
-      <li class="text-white py-2 hover:cursor-pointer hover:underline hover:scale-110 hover:ease-out hover:duration-300">
-        <a href={'/#'+item}>{item}</a>
-      </li>
-    ))}
-  </ul>
+    <ul
+        class="invisible xl:visible lg:visible md:visible xl:text-xl lg:text-xl md:text-lg xs:text-md mr-6"
+    >
+        {
+            navitems.map((item) => (
+                <li class="text-white text-2xl py-2 hover:cursor-pointer hover:underline hover:scale-110 hover:ease-out hover:duration-300">
+                    <a href={"/#" + item}>{item}</a>
+                </li>
+            ))
+        }
+    </ul>
 </nav>

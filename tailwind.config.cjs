@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
-	theme: {
+  content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
+  theme: {
     extend: {
       fontFamily: {
         Windstone: "Windstone",
@@ -11,14 +11,15 @@ module.exports = {
         Coreta: "Coreta",
         Carlosea: "Carlosea",
         Neue: "Neue",
+        Bebas: "BebasNeue",
       },
       fontSize: {
-        '10xl': '9rem',
-        '11xl': '12rem',
-        '12xl': '14rem',
-        '13xl': '16rem',
+        "10xl": "9rem",
+        "11xl": "12rem",
+        "12xl": "14rem",
+        "13xl": "16rem",
       },
     },
-	},
-	plugins: [],
-}
+  },
+  plugins: [],
+};

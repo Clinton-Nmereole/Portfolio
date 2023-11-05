@@ -65,4 +65,21 @@
     font-display: swap;
     font-style: normal;
   }
+
+  @font-face {
+    font-family: "BebasNeue";
+    src: url("./fonts/bebasneue/BebasNeueRegular.ttf")
+    format("truetype");
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+  }
+}
+
+html {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(to right, #8e0e00, #1f1c18);
+    background-size: cover;
+    background-position: center;
 }

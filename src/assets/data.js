@@ -1,85 +1,88 @@
 export const socials = [
   {
     logo: "bx bxl-github",
-    link: "https://github.com/Clinton-Nmereole"
+    link: "https://github.com/Clinton-Nmereole",
   },
   {
     logo: "bx bxl-linkedin-square",
-    link: "https://www.linkedin.com/in/chinedum-nmereole/"
+    link: "https://www.linkedin.com/in/chinedum-nmereole/",
   },
   {
     logo: "bx bx-globe",
-    link: "https://main--chinedumnmereole.netlify.app/"
-  }
-]
+    link: "https://main--chinedumnmereole.netlify.app/",
+  },
+];
 
 export const technologies = [
   {
     text: "HTML",
-    logo: "bx bxl-html5"
+    logo: "bx bxl-html5",
   },
   {
     text: "CSS",
-    logo: "bx bxl-css3"
+    logo: "bx bxl-css3",
   },
   {
     text: "JavaScript",
-    logo: "bx bxl-javascript"
+    logo: "bx bxl-javascript",
   },
   {
     text: "TypeScript",
-    logo: "bx bxl-typescript"
+    logo: "bx bxl-typescript",
   },
   {
     text: "Java",
-    logo: "bx bxl-java"
+    logo: "bx bxl-java",
   },
   {
     text: "Python",
-    logo: "bx bxl-python"
+    logo: "bx bxl-python",
   },
   {
     text: "Golang",
-    logo: "bx bxl-go-lang"
+    logo: "bx bxl-go-lang",
   },
   {
     text: "SQL",
-    logo: "bx bxl-postgresql"
+    logo: "bx bxl-postgresql",
   },
   {
     text: "C++",
-    logo: "bx bxl-c-plus-plus"
+    logo: "bx bxl-c-plus-plus",
   },
   {
     text: "Docker",
-    logo: "bx bxl-docker"
+    logo: "bx bxl-docker",
   },
   {
     text: "Git",
-    logo: "bx bxl-git"
-  }
-
-]
+    logo: "bx bxl-git",
+  },
+];
 
 export const projects = [
   {
     img: "/images/website1.jpg",
     title: "GoBank",
-    explanation:"A JSON API for a personal bank system"
+    explanation: "A JSON API for a personal bank system.",
+    link: "https://github.com/Clinton-Nmereole/GoBankAPI",
   },
   {
-    img: "/images/website2.jpg",
-    title: "Website 2",
-    explanation:"Explanation"
+    img: "/images/tickbeth.jpg",
+    title: "TickBeth",
+    explanation: "Ticketing System for organizations.",
+    link: "https://github.com/Clinton-Nmereole/TickBeth",
   },
   {
     img: "/images/website3.jpg",
     title: "Website 3",
-    explanation:"Explanation"
+    explanation: "Explanation",
+    link: "",
   },
   {
     img: "/images/website4.jpg",
     title: "Website 4",
-    explanation:"Explanation"
+    explanation: "Explanation",
+    link: "",
   },
-]
+];
