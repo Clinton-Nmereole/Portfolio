@@ -1,14 +1,19 @@
 ---
 import { Icon } from "astro-icon";
 interface Props {
-  text: string;
-  logo: string;
+    text: string;
+    logo: string;
 }
 const { text, logo } = Astro.props;
 ---
 
 <div class="mx-16">
-  <i class={`${logo} text-[120px] p-1 border-gray-100/10 border-2 bg-clip-text text-transparent bg-gradient-to-t from-orange-600 via-gray/70 to-gray/90 rounded-lg`}></i>
-  
-  <span class="text-2xl ml-6 font-bold bg-clip-text text-transparent bg-gradient-to-t from-orange-600 via-gray/70 to-gray/90 rounded-lg">{text}</span>
+    <i
+        class={`${logo} text-[120px] p-1 border-gray-100/10 border-2 bg-clip-text text-transparent bg-gradient-to-t from-white via-gray/70 to-gray/90 rounded-lg`}
+    ></i>
+
+    <span
+        class="text-2xl ml-6 font-bold bg-clip-text text-transparent bg-gradient-to-t from-white via-gray/70 to-gray/90 rounded-lg"
+        >{text}</span
+    >
 </div>
