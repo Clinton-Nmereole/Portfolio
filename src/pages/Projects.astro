@@ -1,0 +1,38 @@
+---
+import Layout from "../layouts/Layout.astro";
+import ProjectCarousel from "../components/ProjectCarousel.astro";
+import "../styles/global.css";
+---
+
+<Layout title="Portfolio">
+    <main class="w-screen">
+        <div id="Projects" class="w-full h-screen text-center items-center">
+            <div
+                class="flex flex-col md:justify-self-center justify-self-start min-w-full w-full h-full"
+            >
+                <h1 class="md:text-10xl text-5xl font-Bebas mt-36 uppercase">
+                    Projects
+                </h1>
+                <div
+                    class="flex flex-col min-w-full h-full mt-20 justify-start items-start"
+                >
+                    <ProjectCarousel />
+                </div>
+            </div>
+        </div>
+    </main>
+</Layout>
+
+<style>
+    main {
+        margin: auto;
+        padding: 0rem;
+        width: 100%;
+        color: white;
+        font-size: 20px;
+        line-height: 1.5;
+        height: 100vh;
+        position: absolute;
+        overflow-x: hidden;
+    }
+</style>

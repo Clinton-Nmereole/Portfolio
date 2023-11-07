@@ -1,0 +1,46 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Projects from "../components/Projects.astro";
+import Technologies from "../components/Technologies.astro";
+import Form from "../components/Form.astro";
+import "../styles/global.css";
+import { socials } from "../assets/data";
+---
+
+<Layout title="Portfolio">
+    <main class="w-screen">
+        <div id="Mission" class="w-full h-screen text-center items-center">
+            <div
+                class="flex justify-self-center flex-col min-w-full w-full h-full"
+            >
+                <h1 class="sm:text-10xl text-5xl font-Bebas mt-36 uppercase">
+                    Mission
+                </h1>
+                <div
+                    class="flex justify-center mx-auto py-16 xl:w-[80%] sm:w-full xs:w-[75%]"
+                >
+                    <p class="text-5xl font-Neue opacity-80">
+                        As a new software engineer, I am on a mission to make a
+                        meaningful impact in the world of technology. My journey
+                        is driven by a core set of principles that guide my work
+                        and aspirations
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+</Layout>
+
+<style>
+    main {
+        margin: auto;
+        padding: 0rem;
+        width: 100%;
+        color: white;
+        font-size: 20px;
+        line-height: 1.5;
+        height: 100vh;
+        position: absolute;
+        overflow-x: hidden;
+    }
+</style>

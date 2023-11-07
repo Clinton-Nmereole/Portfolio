@@ -1,0 +1,27 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Form from "../components/Form.astro";
+import "../styles/global.css";
+---
+
+<Layout title="Portfolio">
+    <main class="w-screen">
+        <div id="Contact" class="w-full h-screen text-center items-center">
+            <Form />
+        </div>
+    </main>
+</Layout>
+
+<style>
+    main {
+        margin: auto;
+        padding: 0rem;
+        width: 100%;
+        color: white;
+        font-size: 20px;
+        line-height: 1.5;
+        height: 100vh;
+        position: absolute;
+        overflow-x: hidden;
+    }
+</style>

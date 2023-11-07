@@ -1,16 +1,10 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Nav from "../components/Nav.astro";
-import Projects from "../components/Projects.astro";
-import Technologies from "../components/Technologies.astro";
-import Form from "../components/Form.astro";
 import "../styles/global.css";
 import { socials } from "../assets/data";
-//import { Image } from 'astro:assets'
 ---
 
-<Layout title="Welcome to Astro.">
-    <Nav />
+<Layout title="Portfolio">
     <main class="w-screen">
         <div id="Home" class="w-full h-screen text-center items-center">
             <div
@@ -27,70 +21,25 @@ import { socials } from "../assets/data";
                     {
                         socials.map((social) => (
                             <li class="mx-12 opacity-70 hover:opacity-100 duration-300">
-                                <a
-                                    href={social.link}
-                                    target="_blank"
-                                    class="text-4xl"
-                                >
-                                    <button class="bg-green-400 rounded-full w-20 h-20 border-white border-2 hover:animate-bounce hover:duration-500">
+                                <button class="bg-green-400 rounded-full w-20 h-20 border-white border-2 hover:duration-500 hover:animate-bounce">
+                                    <a
+                                        href={social.link}
+                                        target="_blank"
+                                        class="text-4xl"
+                                    >
                                         <i
                                             class={
                                                 social.logo +
                                                 " bx-lg hover:scale-125"
                                             }
                                         />
-                                    </button>
-                                </a>
+                                    </a>
+                                </button>
                             </li>
                         ))
                     }
                 </ul>
             </div>
-        </div>
-        <div id="Mission" class="w-full h-screen text-center items-center">
-            <div
-                class="flex justify-self-center flex-col min-w-full w-full h-full"
-            >
-                <h1 class="sm:text-10xl text-5xl font-Bebas mt-36 uppercase">
-                    Mission
-                </h1>
-                <div
-                    class="flex justify-center mx-auto py-16 xl:w-[80%] sm:w-full xs:w-[75%]"
-                >
-                    <p class="text-5xl font-Neue opacity-80">
-                        As a new software engineer, I am on a mission to make a
-                        meaningful impact in the world of technology. My journey
-                        is driven by a core set of principles that guide my work
-                        and aspirations
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <div id="Technologies" class="w-full h-screen text-center items-center">
-            <div
-                class="flex flex-col justify-self-center min-w-full w-full h-full"
-            >
-                <h1 class="sm:text-10xl text-5xl font-Bebas mt-36 uppercase">
-                    Technologies
-                </h1>
-                <div class="flex justify-center items-center h-full">
-                    <Technologies />
-                </div>
-            </div>
-        </div>
-        <div id="Projects" class="w-full h-screen text-center items-center">
-            <div
-                class="flex flex-col md:justify-self-center justify-self-start min-w-full w-full h-full"
-            >
-                <h1 class="md:text-10xl text-5xl font-Bebas mt-36 uppercase">
-                    Projects
-                </h1>
-                <Projects />
-            </div>
-        </div>
-        <div id="Contact" class="w-full h-screen text-center items-center">
-            <Form />
         </div>
     </main>
 </Layout>
@@ -106,12 +55,5 @@ import { socials } from "../assets/data";
         height: 100vh;
         position: absolute;
         overflow-x: hidden;
-    }
-    .text-gradient {
-        background-image: var(--accent-gradient);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-size: 400%;
-        background-position: 0%;
     }
 </style>
