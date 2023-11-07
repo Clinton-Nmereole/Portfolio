@@ -27,6 +27,7 @@ document.addEventListener("astro:page-load", () => {
   });
 
   const projecttitle = document.querySelector("[project-title]");
+  console.log(projecttitle);
 
   let array = Array.from(projecttitle.children);
 

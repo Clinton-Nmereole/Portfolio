@@ -10,6 +10,7 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/image": "^0.18.0",
     "@astrojs/tailwind": "^5.0.0",
     "@astrojs/vercel": "^5.1.0",
     "@iconify-json/devicon": "^1.1.20",
@@ -19,6 +20,7 @@
     "gsap": "^3.12.2",
     "prettier": "^3.0.3",
     "prettier-plugin-astro": "^0.12.0",
+    "sharp": "latest",
     "tailwindcss": "^3.0.24"
   }
 }

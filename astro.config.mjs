@@ -1,7 +1,6 @@
 import { defineConfig } from "astro/config";
 import tailwind from "@astrojs/tailwind";
 import icon from "astro-icon";
-
 import vercel from "@astrojs/vercel/static";
 
 // https://astro.build/config
@@ -10,10 +9,13 @@ export default defineConfig({
     tailwind(),
     icon({
       include: {
-        devicon: ["*"], // include all devicons
+        devicon: ["*"],
+        // include all devicons
         "devicon-plain": ["*"], // include all devicon-plain
       },
     }),
   ],
-  adapter: vercel({ imageService: true }),
+  //adapter: vercel({
+  // imageService: true,
+  //}),
 });
