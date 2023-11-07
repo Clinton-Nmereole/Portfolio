@@ -25,29 +25,6 @@ document.addEventListener("astro:page-load", () => {
       modal.classList.toggle("hidden");
     }
   });
-
-  const projecttitle = document.querySelector("[project-title]");
-  console.log(projecttitle);
-
-  let array = Array.from(projecttitle.children);
-
-  array.forEach((element, index) => {
-    element.addEventListener("mouseover", () => {
-      var projectimage = document.querySelector(
-        '[project-title] img[id="' + index + '"]',
-      );
-      projectimage.classList.toggle("hidden");
-      projectimage.classList.add("visible");
-    });
-
-    element.addEventListener("mouseout", () => {
-      var projectimage = document.querySelector(
-        '[project-title] img[id="' + index + '"]',
-      );
-      projectimage.classList.toggle("visible");
-      projectimage.classList.add("hidden");
-    });
-  });
 });
 
 /*========= Email JS =========*/

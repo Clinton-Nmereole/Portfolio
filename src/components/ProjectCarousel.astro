@@ -8,6 +8,7 @@ let i = 0;
     <div
         class="flex flex-col min-w-full h-full justify-start items-start"
         project-title
+        id="works"
     >
         {
             projects.map((project) => (
@@ -19,11 +20,11 @@ let i = 0;
                         <a href={project.link} target="_blank">
                             <Image
                                 src={project.img}
-                                width={300}
-                                height={300}
+                                width={350}
+                                height={350}
                                 alt={project.title}
                                 id={`${i}`}
-                                class="border-2 border-white rounded-full"
+                                class="hidden border-2 border-white rounded-full"
                             />
                         </a>
                         <h2 class="md:text-2xl text-xs py-5 mr-12 border-t-white border-solid border-t-4 font-Rotten ">
@@ -35,6 +36,31 @@ let i = 0;
             ))
         }
     </div>
+    <script>
+        document.addEventListener("astro:page-load", () => {
+            const projecttitle = document.querySelector("[project-title]");
+
+            let array = Array.from(projecttitle.children);
+
+            array.forEach((element, index) => {
+                element.addEventListener("mouseover", () => {
+                    const projectimage = document.querySelector(
+                        '[project-title] img[id="' + index + '"]',
+                    );
+                    projectimage.classList.toggle("hidden");
+                    projectimage.classList.add("visible");
+                });
+
+                element.addEventListener("mouseout", () => {
+                    const projectimage = document.querySelector(
+                        '[project-title] img[id="' + index + '"]',
+                    );
+                    projectimage.classList.toggle("visible");
+                    projectimage.classList.add("hidden");
+                });
+            });
+        });
+    </script>
 </div>
 
 <style>
