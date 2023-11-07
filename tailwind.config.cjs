@@ -12,6 +12,8 @@ module.exports = {
         Carlosea: "Carlosea",
         Neue: "Neue",
         Bebas: "BebasNeue",
+        Impana: "Impana",
+        Orbiter: "Orbiter",
       },
       fontSize: {
         "10xl": "9rem",

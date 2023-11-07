@@ -14,11 +14,11 @@ const navitems = ["Mission", "Technologies", "Projects", "Contact"];
     >
 
     <ul
-        class="invisible xl:visible lg:visible md:visible xl:text-xl lg:text-xl md:text-lg xs:text-md mr-6"
+        class="invisible xl:visible lg:visible md:visible xl:text-xl lg:text-xl md:text-lg xs:text-md mr-6 flex"
     >
         {
             navitems.map((item) => (
-                <li class="text-white text-2xl py-2 hover:cursor-pointer hover:underline hover:scale-110 hover:ease-out hover:duration-300">
+                <li class="text-white text-2xl px-4 hover:cursor-pointer hover:underline hover:scale-110 hover:ease-out hover:duration-300 hover:text-green-400">
                     <a href={"/#" + item}>{item}</a>
                 </li>
             ))

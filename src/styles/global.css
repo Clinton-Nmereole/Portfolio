@@ -74,6 +74,24 @@
     font-display: swap;
     font-style: normal;
   }
+
+  @font-face {
+    font-family: "Impana";
+    src: url("/fonts/Impana/Impana-Regular.otf")
+    format("opentype");
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Orbiter";
+    src: url("/fonts/Orbiter/Orbiter-Regular.otf")
+    format("opentype");
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+  }
 }
 
 html {

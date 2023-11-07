@@ -16,13 +16,13 @@ import { socials } from "../assets/data";
             <div
                 class="flex flex-col justify-center items-center text-center w-full h-full"
             >
-                <h1 class="sm:text-11xl text-7xl font-Bebas font-bold py-2">
-                    HELLO
+                <h1 class="sm:text-9xl text-7xl font-Orbiter font-bold py-2">
+                    Hey, I'm <span class="text-green-400">Chinedum</span>
                 </h1>
-                <h1 class="sm:text-9xl text-5xl font-Bebas font-bold">AND</h1>
-                <h1 class="sm:text-11xl text-6xl font-Bebas font-bold">
-                    WELCOME
+                <h1 class="sm:text-8xl text-7xl font-Orbiter font-bold py-2">
+                    and I like to Build Stuff
                 </h1>
+                <p></p>
                 <ul class="flex justify-center mt-12">
                     {
                         socials.map((social) => (
@@ -32,7 +32,14 @@ import { socials } from "../assets/data";
                                     target="_blank"
                                     class="text-4xl"
                                 >
-                                    <i class={social.logo + " bx-lg"} />
+                                    <button class="bg-green-400 rounded-full w-20 h-20 border-white border-2 hover:animate-bounce hover:duration-500">
+                                        <i
+                                            class={
+                                                social.logo +
+                                                " bx-lg hover:scale-125"
+                                            }
+                                        />
+                                    </button>
                                 </a>
                             </li>
                         ))
