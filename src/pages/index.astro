@@ -2,11 +2,12 @@
 import Layout from "../layouts/Layout.astro";
 import "../styles/global.css";
 import { socials } from "../assets/data";
+import { Image } from "astro:assets";
 ---
 
 <Layout title="Home">
     <main class="w-screen">
-        <div id="Home" class="w-full h-screen text-center items-center">
+        <div id="Home" class="w-full h-screen text-center items-center flex">
             <div
                 class="flex flex-col justify-center items-center text-center w-full h-full"
             >
@@ -39,6 +40,14 @@ import { socials } from "../assets/data";
                         ))
                     }
                 </ul>
+            </div>
+            <div>
+                <Image
+                    src="/images/Programmer.png"
+                    width={700}
+                    height={700}
+                    alt="programmer logo image"
+                />
             </div>
         </div>
     </main>
