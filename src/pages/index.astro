@@ -7,21 +7,28 @@ import { Image } from "astro:assets";
 
 <Layout title="Home">
     <main class="w-screen">
-        <div id="Home" class="w-full h-screen text-center items-center flex">
+        <div
+            id="Home"
+            class="w-full h-screen text-center items-center flex justify-stretch"
+        >
             <div
-                class="flex flex-col justify-center items-center text-center w-full h-full"
+                class="flex flex-col justify-center items-center text-center w-full h-full ml-64"
             >
-                <h1 class="sm:text-9xl text-7xl font-Orbiter font-bold py-2">
+                <h1
+                    class="sm:text-8xl text-6xl font-Orbiter font-bold py-2 ml-12"
+                >
                     Hey, I'm <span class="text-green-400">Chinedum</span>
                 </h1>
-                <h1 class="sm:text-8xl text-7xl font-Orbiter font-bold py-2">
+                <h1
+                    class="sm:text-7xl text-6xl font-Orbiter font-bold py-2 ml-12"
+                >
                     and I like to Build Stuff
                 </h1>
                 <p></p>
-                <ul class="flex justify-center mt-12">
+                <ul class="flex justify-center mt-12 ml-12">
                     {
                         socials.map((social) => (
-                            <li class="mx-12 opacity-70 hover:opacity-100 duration-300">
+                            <li class="mx-10 opacity-70 hover:opacity-100 duration-300">
                                 <button class="bg-green-400 rounded-full w-20 h-20 border-white border-2 hover:duration-500 hover:animate-bounce">
                                     <a
                                         href={social.link}
@@ -41,12 +48,13 @@ import { Image } from "astro:assets";
                     }
                 </ul>
             </div>
-            <div>
+            <div class="h-full w-full items-center flex justify-center mr-36">
                 <Image
-                    src="/images/Programmer.png"
-                    width={700}
-                    height={700}
+                    src="/images/ProgrammerLogo.png"
+                    width={2200}
+                    height={2200}
                     alt="programmer logo image"
+                    class="mr-80"
                 />
             </div>
         </div>
