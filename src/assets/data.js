@@ -2,14 +2,45 @@ export const socials = [
   {
     logo: "bx bxl-github",
     link: "https://github.com/Clinton-Nmereole",
+    name: "GitHub",
   },
   {
     logo: "bx bxl-linkedin-square",
     link: "https://www.linkedin.com/in/chinedum-nmereole/",
+    name: "LinkedIn",
   },
   {
     logo: "bx bx-globe",
     link: "https://main--chinedumnmereole.netlify.app/",
+    name: "Website",
+  },
+];
+
+export const navlogos = [
+  {
+    logo: "bx bx-home xl",
+    name: "Home",
+    link: "/",
+  },
+  {
+    logo: "bx bxs-rocket xl",
+    name: "Mission",
+    link: "/Mission",
+  },
+  {
+    logo: "bx bx-code-alt xl",
+    name: "Skills",
+    link: "/Skills",
+  },
+  {
+    logo: "bx bx-bulb xl",
+    name: "Projects",
+    link: "/Projects",
+  },
+  {
+    logo: "bx bxs-contact xl",
+    name: "Contact",
+    link: "/Contact",
   },
 ];
 

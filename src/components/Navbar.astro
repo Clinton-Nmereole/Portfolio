@@ -1,0 +1,28 @@
+---
+import { navlogos } from "../assets/data";
+---
+
+<div
+    class="w-auto mx-auto shadow-black bg-green-600 border-white border-2 h-auto rounded-3xl mt-6"
+>
+    <nav class="flex md:justify-center p-2 w-auto opacity-80 shadow-black">
+        <ul
+            class="invisible xl:visible lg:visible md:visible xl:text-xl lg:text-xl md:text-lg xs:text-md mr-6 flex"
+        >
+            {
+                navlogos.map((navlogo) => (
+                    <li class="text-white text-3xl mx-10">
+                        <a href={navlogo.link}>
+                            <button
+                                class="bg-green-600 rounded-full w-20 h-20 border-green-900 border-4 hover:duration-500 hover:scale-125 hover:-translate-y-4 hover:bg-green-900"
+                                title={navlogo.name}
+                            >
+                                <i class={navlogo.logo + " hover:scale-125"} />
+                            </button>
+                        </a>
+                    </li>
+                ))
+            }
+        </ul>
+    </nav>
+</div>

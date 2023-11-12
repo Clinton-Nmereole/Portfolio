@@ -12,6 +12,7 @@ export default defineConfig({
         devicon: ["*"],
         // include all devicons
         "devicon-plain": ["*"], // include all devicon-plain
+        solar: ["*"], // include all solar
       },
     }),
   ],

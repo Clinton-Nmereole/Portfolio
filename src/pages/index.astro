@@ -9,19 +9,22 @@ import { Image } from "astro:assets";
     <main class="w-screen">
         <div
             id="Home"
-            class="w-full h-screen text-center items-center flex justify-stretch"
+            class="w-screen h-screen text-center items-center justify-center flex flex-col"
         >
-            <div
-                class="flex flex-col justify-center items-center text-center w-full h-full ml-64"
-            >
-                <h1
-                    class="sm:text-8xl text-6xl font-Orbiter font-bold py-2 ml-12"
-                >
+            <div class="items-center flex justify-center">
+                <Image
+                    src="/images/ProgrammerLogo.png"
+                    width={1200}
+                    height={1200}
+                    alt="programmer logo image"
+                    class=""
+                />
+            </div>
+            <div class="items-center text-center flex flex-col justify-center">
+                <h1 class="sm:text-8xl text-6xl font-Orbiter font-bold py-2">
                     Hey, I'm <span class="text-green-400">Chinedum</span>
                 </h1>
-                <h1
-                    class="sm:text-7xl text-6xl font-Orbiter font-bold py-2 ml-12"
-                >
+                <h1 class="sm:text-7xl text-6xl font-Orbiter font-bold py-2">
                     and I like to Build Stuff
                 </h1>
                 <p></p>
@@ -29,7 +32,10 @@ import { Image } from "astro:assets";
                     {
                         socials.map((social) => (
                             <li class="mx-10 opacity-70 hover:opacity-100 duration-300">
-                                <button class="bg-green-400 rounded-full w-20 h-20 border-white border-2 hover:duration-500 hover:animate-bounce">
+                                <button
+                                    class="bg-green-400 rounded-full w-20 h-20 border-white border-2 hover:duration-500 hover:animate-bounce"
+                                    title={social.name}
+                                >
                                     <a
                                         href={social.link}
                                         target="_blank"
@@ -47,15 +53,6 @@ import { Image } from "astro:assets";
                         ))
                     }
                 </ul>
-            </div>
-            <div class="h-full w-full items-center flex justify-center mr-36">
-                <Image
-                    src="/images/ProgrammerLogo.png"
-                    width={2200}
-                    height={2200}
-                    alt="programmer logo image"
-                    class="mr-80"
-                />
             </div>
         </div>
     </main>
