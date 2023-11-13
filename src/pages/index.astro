@@ -22,7 +22,10 @@ import { Image } from "astro:assets";
             </div>
             <div class="items-center text-center flex flex-col justify-center">
                 <h1 class="sm:text-8xl text-6xl font-Orbiter font-bold py-2">
-                    Hey, I'm <span class="text-green-400">Chinedum</span>
+                    Hey, I'm <span
+                        class="bg-gradient-to-r from-emerald-500 to-red-800 bg-clip-text text-transparent"
+                        >Chinedum</span
+                    >
                 </h1>
                 <h1 class="sm:text-7xl text-6xl font-Orbiter font-bold py-2">
                     and I like to Build Stuff
@@ -33,7 +36,7 @@ import { Image } from "astro:assets";
                         socials.map((social) => (
                             <li class="mx-10 opacity-70 hover:opacity-100 duration-300">
                                 <button
-                                    class="bg-green-400 rounded-full w-20 h-20 border-white border-2 hover:duration-500 hover:animate-bounce"
+                                    class="bg-green-400 rounded-full w-20 h-20 border-white border-2 hover:duration-300 hover:animate-spin hover:bg-gradient-to-r from-emerald-500 to-red-800"
                                     title={social.name}
                                 >
                                     <a
